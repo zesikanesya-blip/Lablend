@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LabLend - Peminjaman Peralatan Laboratorium</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><span class="brand">LabLend</span><span id="page-title"></span><span class="user"><span id="user-name"></span> <button id="logout" class="btn-sm" hidden>Keluar</button></span></header>
+<div class="layout">
+  <nav class="sidebar">
+    <a href="#dashboard" data-page="dashboard">Dashboard</a>
+    <a href="#mahasiswa" data-page="mahasiswa">Mahasiswa</a>
+    <a href="#peralatan" data-page="peralatan">Peralatan</a>
+    <a href="#peminjaman" data-page="peminjaman">Peminjaman</a>
+    <a href="#profil" data-page="profil">Profil Tim</a>
+  </nav>
+  <main id="content"></main>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-box"><h3 id="modal-title"></h3><form id="modal-form"></form></div></div>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+<noscript>Aktifkan JavaScript untuk memakai LabLend.</noscript>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

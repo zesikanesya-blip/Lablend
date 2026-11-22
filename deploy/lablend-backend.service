@@ -1,0 +1,14 @@
+[Unit]
+Description=LabLend Backend (Flask + Gunicorn)
+After=network.target
+
+[Service]
+User=__USER__
+WorkingDirectory=__DIR__
+EnvironmentFile=__DIR__/.env
+# 1 worker + thread: data disimpan di memori proses, jadi worker harus satu agar data konsisten
+ExecStart=__DIR__/venv/bin/gunicorn --chdir backend -w 1 --threads 4 -b 0.0.0.0:${PORT} app:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

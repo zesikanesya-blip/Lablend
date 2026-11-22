@@ -1,0 +1,53 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f4f6fa;color:#1d2433}
+.topbar{display:flex;align-items:center;gap:16px;background:#dfe6ee;border-bottom:2px solid #b8c4d4;padding:0 20px;height:52px}
+.brand{font-weight:700;font-size:20px;color:#1a4b8c}
+#page-title{font-weight:600;color:#445}
+.user{margin-left:auto;font-size:14px}
+.layout{display:flex;min-height:calc(100vh - 52px)}
+.sidebar{width:190px;background:#eef1f5;border-right:1px solid #c9d2de;padding:14px 10px;display:flex;flex-direction:column;gap:8px}
+.sidebar a{padding:10px 12px;border-radius:8px;text-decoration:none;color:#1d2433;background:#fff;border:1px solid #ccd5e0;font-size:14px}
+.sidebar a.active{background:#9ec5f0;font-weight:700;border-color:#6fa5e0}
+main{flex:1;padding:22px 26px;overflow-x:auto}
+h2{margin:0 0 16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:24px}
+.card{background:#fff;border:1px solid #ccd5e0;border-radius:12px;padding:16px;text-align:center}
+.card .num{font-size:32px;font-weight:700;color:#1a4b8c}
+.card.warn .num{color:#c0392b}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+input,select{padding:8px 10px;border:1px solid #b8c4d4;border-radius:8px;font-size:14px;background:#fff}
+button{padding:8px 14px;border:1px solid #889;border-radius:8px;background:#e9eef5;cursor:pointer;font-size:14px}
+button:hover{filter:brightness(.96)}
+.btn-primary{background:#2e7d32;color:#fff;border-color:#2e7d32}
+.btn-danger{background:#c0392b;color:#fff;border-color:#c0392b}
+.btn-sm{padding:4px 9px;font-size:13px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ccd5e0;border-radius:10px;overflow:hidden;font-size:14px}
+th,td{padding:9px 11px;border-bottom:1px solid #e3e8ef;text-align:left}
+th{background:#cfd8e3}
+td.actions{white-space:nowrap}
+td.actions button+button{margin-left:6px}
+small{color:#667}
+button:disabled{opacity:.6;cursor:not-allowed}
+:focus-visible{outline:2px solid #1a4b8c;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.badge{padding:2px 9px;border-radius:12px;font-size:12px;font-weight:600}
+.b-Dipinjam{background:#dbeafe;color:#1e4fa0}.b-Terlambat{background:#fde0dc;color:#b3261e}.b-Dikembalikan{background:#dcf2dc;color:#1f6b2a}
+.panel{background:#fff;border:1px solid #ccd5e0;border-radius:12px;padding:16px;margin-bottom:22px}
+.form-row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+.form-row label{display:flex;flex-direction:column;font-size:13px;gap:4px}
+.empty{padding:18px;text-align:center;color:#778}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;z-index:10}
+.modal.hidden,.toast.hidden{display:none}
+.modal-box{background:#fff;border-radius:12px;padding:22px;width:min(440px,92vw);max-height:90vh;overflow:auto}
+.modal-box h3{margin-top:0}
+.modal-box label{display:flex;flex-direction:column;font-size:13px;gap:4px;margin-bottom:12px}
+.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:8px}
+.toast{position:fixed;bottom:22px;right:22px;padding:12px 18px;border-radius:10px;color:#fff;background:#2e7d32;z-index:20}
+.toast.error{background:#c0392b}
+@media(max-width:700px){.layout{flex-direction:column}.sidebar{width:auto;flex-direction:row;flex-wrap:wrap}}
+body:not(.authed) .sidebar{display:none}
+.auth-box{max-width:380px;margin:36px auto;background:#fff;border:1px solid #ccd5e0;border-radius:12px;padding:24px}
+.auth-box label{display:flex;flex-direction:column;gap:4px;font-size:13px;margin-bottom:12px}
+.auth-box button{width:100%}
+.member b{font-size:16px}
+.avatar{width:56px;height:56px;border-radius:50%;background:#9ec5f0;color:#1a4b8c;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
