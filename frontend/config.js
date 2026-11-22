@@ -9,7 +9,7 @@ window.APP_CONFIG = {
   // Tugas 12: halaman Profil Tim membaca daftar ini. Lengkapi nama dan NIM seluruh anggota.
   MEMBERS: [
     { nama: "Zesika Neysa Alfara", nim: "103012400211", peran: "Anggota Kelompok 13" },
-    { nama: "Isi Nama Anggota 2", nim: "isi NIM", peran: "Anggota Kelompok 13" },
-    { nama: "Isi Nama Anggota 3", nim: "isi NIM", peran: "Anggota Kelompok 13" }
+    { nama: "Putri Salwa Salsabila", nim: "103012400364", peran: "Anggota Kelompok 13" },
+    { nama: "Nailah Dhiya Marzuqoh", nim: "103012400421", peran: "Anggota Kelompok 13" }
   ]
 };
